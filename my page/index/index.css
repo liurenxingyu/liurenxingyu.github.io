@@ -1,0 +1,141 @@
+#container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+header[role=banner] {
+	text-align: left;
+	height: 200px;
+}
+
+header[role=banner] #inner-banner {
+	position: relative;
+}
+
+.site-logo {
+	float: left;
+}
+
+#menu-button {
+    border: solid 1px green;
+    margin: 2em 6em;
+    float: right;
+    font-size: 30px;
+
+}
+.site-logo-type {
+	font-size: 3em;
+	margin: 0.5em 90px 0;
+	color: rgb(50, 123, 176);
+}
+
+.site-tagline {
+	font-size: 2em;
+	margin: 0.5em 90px;
+	color: rgb(157, 84, 24);
+}
+
+.content {
+	position: relative;
+	width: auto;
+}
+
+.shang {
+	padding: 1em 0;
+    background-color: rgb(128, 75, 75);
+    height: 400px;
+    width: 100%;
+    border-top: dashed 1px orange;
+}
+.projects {
+	border: dashed 1px blue;
+	position: relative;
+	float: left;
+	width: 40%;
+	height: 300px;
+	margin: 2em 3em;
+}
+
+.music {
+	position: relative;
+	width: 40%;
+	height: 200px;
+	border: dashed 1em yellow;
+	float: right;
+	margin: 4em 4em;
+}
+
+.zhong {
+	padding: 1em 0;
+	height: 550px;
+	width: 100%;
+    background-color: rgb(163, 142, 142);
+    border-top: solid 1px black;
+    margin-top: 1em;
+}
+
+.recent-things {
+	width: 20%;
+	height: 240px;
+	margin: 10em 0 0 15em;
+	border: solid;
+	float: left;
+}
+
+.author {
+	position: relative;
+	text-align: center;
+	width: 30%;
+	height: 300px;
+	float: right;
+	margin: 1em 16em 0 0;
+}
+
+.author-bio img {
+	border-radius: 50%;
+}
+
+section .author {
+	display: inline-block;
+}
+
+.xia {
+	position: relative;
+}
+
+.gallery {
+	padding: 1em 1em;
+	text-align: center;
+}
+
+.square {
+	position: relative;
+	float: left;
+	padding-bottom: 0%;
+	margin: 10px;
+}
+.picture {
+	position: relative;
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: 0px 25px;
+    overflow: hidden;
+}
+img {
+	width: 300px;
+	height: 300px;
+}
+
+.footer {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 60px;
+	background-color: #323944;
+	text-align: center;
+}
