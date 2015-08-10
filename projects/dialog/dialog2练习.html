@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dialog练习</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="dialog1.css"> 
+	<style type="text/css">
+         .placeholder {
+         	height: 50px;
+         	width: 50px;
+         	background-color: orange;
+         }
+	</style>
+</head>
+<body>
+     <input id="test" type="button" value="Button">
+     <div class="dialog">
+     	<div class="header">
+     	Header
+     		<div class="close">x</div>
+     	</div>
+     	<div class="content">
+     		<div class="placeholder"></div>
+     	</div>
+     </div>
+     <script type="text/javascript">
+           var input = document.getElementById('test');
+           var dialog = document.getElementsByClassName('dialog')[0];
+
+           input.addEventListener('click', function(e){
+           	   dialog.style.display = "block";   
+               e.stopPropagation(); 
+           }, false);
+           
+           //让dialog里面不关闭
+           dialog.addEventListener('click', function(r){
+           	   r.stopPropagation();   
+           }, false);
+
+           var close = document.getElementsByClassName('close')[0];
+           close.addEventListener('click', closeDialog, false);
+         
+          function closeDialog(){        
+               var dialog = document.getElementsByClassName('dialog')[0];   
+           	   dialog.style.display = "none";         
+          }
+          
+          document.body.addEventListener('click', closeDialog, false);
+
+     </script>
+</body>
+</html>

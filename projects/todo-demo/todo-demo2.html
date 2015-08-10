@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>todo-demo2</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="todo1.css">
+</head>
+<body>
+     <div class="todo-container">
+     	<h1>Todos</h1>
+     	<div class="todo-banner"></div>
+     	<div class="todo-content">
+     		<div class="todo-input">
+     		    <label class="todo-toggle" ></label>
+     			<input type="text" placeholder="What needs to be done?"/>
+     		</div>
+     		<ul class="todo-items">
+     			<li class="todo-item" id="item0">
+     				<div class="status"></div>
+     				<span class="todo-text">test</span>
+     				<div class="delete"></div>
+     			</li>
+     			<li class="todo-item" id="item1">
+     				<div class="status"></div>
+     				<span class="todo-text">test2</span>
+     				<div class="delete"></div>
+     			</li>
+     		</ul>
+     		<div class="seperator"></div>
+     	</div>
+     	<div class="todo-summary">
+     		<div class="todo-left">
+     		  <span class="active-num">2</span>
+              item left
+     		</div>
+            <div class="todo-filters">
+            	<span class="switch switch-all current">All</span>
+    			<span class="switch switch-active">Active</span>
+    			<span class="switch switch-complete">Completed</span>
+            </div>
+            <div class="todo-clear">
+            "               
+    			Clear completed"
+            	<span class="complete-wrap" style="display: none">
+            	<label class="complete-num">0</label> 
+            	</span>
+            </div>
+     	</div>
+     </div>
+     <div class="todo-footer">
+     	<div>Double click to create a todo</div>
+     	<div>
+     		"Created by" 
+     		<a href="https://github.com/liurenxingyu">liurenxingyu</a>
+     	</div>
+     </div>
+     
+        <script type="text/javascript" src="todo.js"></script>
+     
+</body>
+</html>
