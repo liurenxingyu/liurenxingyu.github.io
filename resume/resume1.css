@@ -11,6 +11,25 @@ h1 {
 	text-align: center;
 }
 
+button {
+	position: fixed;
+	width: 100px;
+	height: 40px;
+	left: 0;
+	top: 50px;
+	float: left;
+	margin:0 0 0 0;
+    cursor: pointer;
+    color: rgb(55, 39, 10);
+    background-color: rgb(234, 240, 181);
+    font-size: 1em;
+}
+a:hover button{
+	color: orange;
+}
+a:hover {
+	color: orange;
+}
 .subtitle {
 	margin: 0 0 0 0;
 	border-top:dashed 1px rgba(245, 160, 5,0.5);
