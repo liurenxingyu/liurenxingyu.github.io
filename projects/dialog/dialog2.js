@@ -28,6 +28,7 @@ Dialog.prototype.init = function(){
          _dialog.hide();
      });
      $(document).on('click', function(e){
+           var  target = e.target;
      	if($(target).parents('.dialog').length > 0) return false;
      	_dialog.hide();
      })
@@ -37,10 +38,15 @@ Dialog.prototype.init = function(){
 
 
 
-
 Dialog.prototype.show = function(){
-    this.ref.css('display', 'block');
+     $('.dialog').slideDown(300, 'swing', function(){
+          $('.dialog').css('display', 'block');
+     });
+    
 }
-Dialog.prototype.hide = function(){
-	this.ref.css('display', 'none');
+Dialog.prototype.hide = function(){ 
+     $('.dialog').hide(300,'linear', function(){
+          $('.dialog').css('display', 'none');
+     });
+	
 }
