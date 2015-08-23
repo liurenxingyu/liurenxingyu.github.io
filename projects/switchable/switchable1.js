@@ -107,7 +107,7 @@ Switchable.prototype.go = function(index, isClick){       //定义go函数
   if(newIndex - currentItemIndex > 0){
     ref.animate({                                    //向左移    先动画
       left: opration + offset + 'px'                     //再移动
-    }, conf.duration, function(){
+    }, conf.duration, function(){                      //在动画完成后，执行函数，
 
       var i = currentItemIndex;                         //将当前显示的放在第一位，把dom回移
 

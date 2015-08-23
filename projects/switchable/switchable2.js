@@ -81,7 +81,51 @@ Switchable.autotask = function(switchable){
 };
 
 Switchable.prototype.go = function(index, isClick){
+            var conf = this.conf,
+                items = this.items,
+                indicators = this.indicators,
+                ref = this.ref;
 
+            var newIndex = index;
+
+            if(newIndex < 0){
+              newIndex = items.length - 1;
+            } else if(newIndex > item.length-1){
+              newIndex = 0;
+            }  
+             
+            var currentItemIndex = this.currentItemIndex,
+                width = conf.width,
+                offset = (newIndex - currentItemIndex) * width,
+                opration = newIndex - currentItemIndex > 0 ? '-=' : '+=';
+
+            ref.stop(true, true);
+            if(this.conf.autoplay && isClick){
+              clearInterval(this.timerId);
+              this.timerId = null;
+            }  
+
+
+            var _switchable = this;
+             if (newIndex - currentItemIndex > 0){
+              ref.animate({
+                left: opration + offset + 'px'
+              }, conf.duration, function(){
+                var i = currentItemIndex;
+                while(i != newIndex){
+                  items = ref.find('.switchable-item');
+                  item = items.last();
+                  item.after(items.first());
+                  i += 1;
+                }
+
+                ref.css('left', 0);
+
+                if(_switchable.conf.autoplay && isClick){
+                  Switchable.autoTask(_switchable);
+                }
+              })
+             };    
 };
 
 Switchable.prototype.pre = function(){

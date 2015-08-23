@@ -19,7 +19,9 @@ header[role=banner] #inner-banner {
 .site-logo {
 	float: left;
 }
-
+button {
+	cursor: pointer;
+}
 #menu-button {
     border: solid 1px green;
     margin: 2em 6em;
@@ -37,6 +39,14 @@ header[role=banner] #inner-banner {
 	font-size: 2em;
 	margin: 0.5em 90px;
 	color: rgb(157, 84, 24);
+}
+.site-tagline {
+	animation: 1s rainbow infinite;
+}
+@keyframes rainbow {
+  0% { background: #c00; }
+  50% { background: orange; }
+  100% { background: yellowgreen; }
 }
 
 .content {

@@ -39,13 +39,13 @@ Dialog.prototype.init = function(){
 
 
 Dialog.prototype.show = function(){
-     $('.dialog').slideDown(300, 'swing', function(){
+     $('.dialog').slideDown(500, 'swing', function(){
           $('.dialog').css('display', 'block');
      });
     
 }
 Dialog.prototype.hide = function(){ 
-     $('.dialog').hide(300,'linear', function(){
+     $('.dialog').hide(500,'linear', function(){
           $('.dialog').css('display', 'none');
      });
 	
