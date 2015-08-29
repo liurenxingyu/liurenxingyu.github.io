@@ -1,7 +1,7 @@
 .wrap {
       
 	  border-bottom: dashed 1px rgba(245, 160, 5,0.5);
-      margin: 0 20% 0 20%;
+      margin: 0 auto;
       width: 800px;
       height: auto;
       padding:0 0 0 0;
@@ -11,26 +11,39 @@ h1 {
 	text-align: center;
 }
 
-button {
+h1:hover {
+	color: orange
+}
+div button {
 	position: fixed;
 	width: 100px;
 	height: 40px;
 	left: 0;
 	top: 50px;
 	margin:0 0 0 0;
-    cursor: pointer;
     color: rgb(153, 112, 36);
     background-color: rgb(234, 240, 181);
     font-size: 1em;
+    border-radius: 30%;
+    border-style: none;
+    transition: left .3s ease;
 }
 
-a:hover button{
+button a:hover {
 	color: orange;
+	
 }
 
+a:link  {
+	text-decoration:none;
+}
 a:hover {
 	color: orange;
+	text-decoration:underline;
+    font-size:110%;
 }
+
+a:active {text-decoration:underline;}
 
 .logo img {
 	position: fixed;
@@ -60,19 +73,25 @@ ul {
 .info {
 	padding: 0 0 10px 0px;
 	position: relative;
+	
 }
 
 .info li {
 	text-indent: 20px;
 }
+
+
+
 .middle {
 	float: left;
 	margin-left: 22em; 
 	margin-top: -11em;
+
 }
 
 .right {	
 	position: absolute;
+	float: left;
 	width: 130px;
 	height: 170px;
 	top: -40px;
