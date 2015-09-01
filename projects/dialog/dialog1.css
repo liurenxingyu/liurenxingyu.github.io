@@ -1,3 +1,7 @@
+body {
+	background-size:  50%;
+	background-repeat: repeat-x;;
+}
 .dialog{
 	width: 600px;
 	position: fixed;  /*固定位置*/

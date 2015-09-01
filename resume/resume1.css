@@ -1,6 +1,6 @@
 .wrap {
       
-	  border-bottom: dashed 1px rgba(245, 160, 5,0.5);
+	  border: dashed 1px rgba(245, 160, 5,0.5);
       margin: 0 auto;
       width: 800px;
       height: auto;
@@ -26,13 +26,15 @@ div button {
     font-size: 1em;
     border-radius: 30%;
     border-style: none;
-    transition: left .3s ease;
+    transition: width 2s;
 }
 
-button a:hover {
+button:hover {
 	color: orange;
-	
+	transform: scale(1.5, 1.5) translate(20px, 0);
+	width: 125px;
 }
+
 
 a:link  {
 	text-decoration:none;
