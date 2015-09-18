@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数组</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+       <script type="text/javascript">
+           // var arr = new Array(3);
+           // arr[0] = "lauah";
+           // arr[1] = "aurjaja";
+           // arr[2] = "juehtket";
+
+           // var arr1 = new Array(4);
+           // arr1[0] = "karjian";
+           // arr1[1] = "kaljtanaaayty";
+           // arr1[2] = "mbakanbt";
+           // arr1[3] = "manianrabaihnqqq";
+
+           // document.write(arr.concat(arr1).join("+") + "<br />")
+           
+     </script>
+
+     <script type="text/javascript">
+           // var arr = new Array();
+           // arr[0] = "23";
+           // arr[1] = "12";
+           // arr[2] = "45";
+           // arr[3] = "566";
+           // arr[4] = "0";
+           // arr[5] = "73226";
+
+           // var x = arr.sort();
+           // for (var i = 0; i < arr.sort().length; i++) {
+           // 	   document.write(arr.sort()[i] + "<br />");
+           // };
+           
+           // document.write(Math.min(1.78, 3))
+
+     </script>
+     <script> 
+Array.prototype.del = function() { 
+var a = {}, c = [], l = this.length; 
+for (var i = 0; i < l; i++) { 
+var b = this[i]; 
+var d = (typeof b) + b;   //重复？？？
+if (a[d] === undefined) { 
+c.push(b); 
+a[d] = 1; 
+} 
+} 
+return c; 
+} 
+alert([1, 1, 2, 3, 4, 5, 4, 3, 4, 4, 5, 5, 6, 7].del()); 
+</script>
+</body>
+</html>

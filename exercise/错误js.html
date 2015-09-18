@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h1>我的第一个javascript程序</h1>
+<p >请输入5到10之间的数字</p>
+<button id="demo">测试输入值</button>
+
+
+<script>
+   document.getElementById("demo").onclick=function(){displayDate()};
+   function displayDate(){
+   	document.getElementById("show").innerHTML=Date();
+   }
+</script>
+<p id="show"></p>
+</body>
+</html>

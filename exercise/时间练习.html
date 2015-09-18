@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>事件</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+        function lighton(){
+        	document.getElementById("myimage").src="../images/body-bg.png";
+        }
+
+        function lightoff(){
+        	document.getElementById("myimage").src="../images/bg-ramp.jpg";
+        }
+	</script>
+</head>
+<body>
+    <img id="myimage" onmouseover="lighton()" onmouseout="lightoff()" src="../images/bg-ramp.jpg">
+    <p>按住鼠标换图</p>
+</body>
+</html>

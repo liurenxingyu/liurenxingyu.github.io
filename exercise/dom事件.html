@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>按钮事件</title>
+	<meta charset="utf-8" />
+
+</head>
+<body>
+     <div id="div1" style="background-color:green; color:red; width:200px; height:200px; font-size:12px">请点击这里</div>
+
+     <script type="text/javascript">
+     document.getElementById("div1").onmouseover=function(){mDown(this)};
+     document.getElementById("div1").onmouseout=function(){mUp(this)};
+         function mDown(obj){
+         	obj.style.backgroundColor="gray";
+         	obj.innerHTML="请释放鼠标";
+         }
+
+         function mUp(obj){
+         	obj.style.backgroundColor="green";
+         	obj.innerHTML="请按下鼠标";
+         }
+     </script>
+</body>
+</html>

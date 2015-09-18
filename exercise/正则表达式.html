@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>正则</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+  <script type="text/javascript">
+     var tte = new RegExp("t", "g");              
+     document.write(tte.test("thethqhthqht"));
+     tte.compile("h");                                //将t换成了h
+     document.write(tte.test("hahhaakhak"));
+  </script> 
+</body>
+</html>
