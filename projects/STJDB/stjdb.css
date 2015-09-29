@@ -1,0 +1,130 @@
+body {
+	background: black;
+}
+.wrap {
+	position: relative;
+	width: 800px;
+	height: 520px;
+	margin: 50px auto;
+	border: 30px #844444 solid;
+    background-color: #D1DAD7;
+}
+.pk {
+	position: relative;
+	height: 200px;
+	width: 720px;
+	margin: 26px auto 50px;
+	padding: 0 0 0 0;
+	top: 5%;
+	border:1px solid black;
+}
+.pk_wrap {
+	position: relative;
+	width: 500px;
+	height: 182px;
+	margin: 0 auto;
+	top: 8px;
+	
+}
+.pk img:first-child {
+	position: relative;
+	width: 200px;
+	height: 182px;
+	
+    left: 0px;
+    top: 0px;
+
+}
+.pk img:last-child {
+	position: relative;
+	width: 200px;
+	height: 182px;
+	
+    right: 0px;
+    top: 0px;
+
+}
+
+#result {
+    font-weight: bold;
+    font-size: 2em;
+    color:red;
+    vertical-align: middle;
+    position: relative;
+    bottom: 90px;
+    margin: 0 5px 0 5px;
+    display: inline-block;
+    
+    width: 68px;
+}
+@keyframes bianhua {
+	from {color:white;}
+	to {color: black; transform:scale(1.1);}
+}
+p {
+	position: relative;
+	margin: 10px auto;
+	width: 300px;
+	top: 10px;
+	font-weight: bold;
+	font-size: 2em;
+	-webkit-animation:bianhua 3s infinite alternate;
+	text-shadow: 5px 5px 5px #D8D1AF;
+
+}
+.pics {
+	position: relative;
+	width: 720px;
+	height: 200px;
+	margin: 10px auto;
+}
+
+ul li {
+	position: relative;
+	float: left;
+	bottom: 0px;
+	top: 0px;
+	margin: 0 48px 0 10px;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.feedback {
+	position: relative;
+	margin: 15px 0 50px 0;
+}
+.computer-win {
+    position: relative;
+    float: left;
+    top: 10px; 
+    left: 150px;
+    
+
+}
+.my-win {
+	position: relative;
+    float: right;
+    top: 10px;
+    right: 150px;
+    padding-right: 20px; 
+}
+.tie_game {
+	position: relative;
+    float: left;
+    top: 10px; 
+    left: 270px;
+}
+
+#again {
+	position: absolute;
+	float:right;
+	cursor: pointer;
+	right: 0px;
+	
+	width: 80px;
+	height: 30px;
+	background: #A5421C;
+	font-size: 1.3em;
+	font-family: "Times New Roman";
+	color: rgba(255, 255, 255, 0.6);
+}
